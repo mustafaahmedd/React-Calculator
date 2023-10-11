@@ -1,0 +1,101 @@
+.container {
+    padding-top: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "clear back divide multiply"
+        "seven eight nine subtract"
+        "four five six add"
+        "one two three equals"
+        "zero zero decimal equals"
+    ;
+}
+
+.calculator {
+    border: 2px solid #47476b;
+    padding: 5px;
+    background: black;
+    /* width: 400px; */
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.padButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+    background-color: grey;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 0px;
+    height: 90px;
+}
+
+.output {
+    text-align: right;
+    background-color: black;
+    font-size: 20px;
+    margin-right: 5px;
+    min-height: 40px;
+    font-size: 29px;
+    font-family: digital;
+    color: white;
+    text-align: right;
+    line-height: 30px;
+}
+
+.formulaScreen {
+    min-height: 30px;
+    font-family: digital;
+    font-size: 20px;
+    color: orange;
+    text-align: right;
+    vertical-align: text-top;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.clear {
+    grid-area: clear;
+    background-color: #ac3939;
+}
+
+.back {
+    background-color: #d9c1c1;
+    color: #393b40;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.equals {
+    grid-area: equals;
+    background-color: #004466;
+    height: 180px;
+}
+
+.padButton:hover {
+    color: black;
+    border: 1px solid #cae1f1;
+    z-index: 3;
+}
+
+.darkGray {
+    background-color: #333;
+}
