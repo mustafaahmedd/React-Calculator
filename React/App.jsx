@@ -2,8 +2,6 @@ import reactLogo from './assets/react.svg'
 import React from 'react';
 import ReactDOM  from 'react-dom/client';
 import './css/style.css'
-import './App.css'
-import './index.css'
 
 function App() {
   const [input, setInput] = React.useState("")
